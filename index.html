@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine einfache Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen auf meiner Homepage!</h1>
+        <p>Hier ist ein einfacher Text, der auf der Seite angezeigt wird.</p>
+
+        <h2>Kontaktformular</h2>
+        <form action="mailto:dein-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Dein Name" required>
+            <input type="email" name="email" placeholder="Deine E-Mail" required>
+            <textarea name="message" placeholder="Deine Nachricht" rows="5" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </div>
+</body>
+</html>
