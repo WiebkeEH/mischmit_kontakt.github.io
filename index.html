@@ -43,6 +43,9 @@
            Wenn Du möchtest, kannst Du Deinen Beitrag gern anonym zusenden. Solltest Du aber eine Rückmeldung oder Hilfe von uns wünschen, bräuchten wir natürlich Deine Kontaktdaten!
         </p>
 
+
+
+    <!--
         <h2>Kontaktformular</h2>
         <form action="mailto:wibimoon91@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Dein Name" required>
@@ -53,5 +56,27 @@
             <button type="submit">Senden</button>
         </form>
     </div>
+    -->
+
+<form action="https://www.onlex.de/_formmailer.php?username=formws" method="POST" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+
+<input type="hidden" name="Formular" value="Kontakt">
+
+Dein Name:<br>
+<input type="text" name="name" size="30"><br>
+
+Deine eMail-Adresse:<br>
+<input type="text" name="eMail" size="30"><br>
+
+Deine Nachricht:<br>
+<textarea name="Nachricht" cols="34" rows="5"></textarea><br>
+
+Passwort- / Spamschutz: Bitte gib <i>mischmit24</i> ein<br>
+<input type="password" name="onlex_password" size="30" maxlength="15"><br>
+
+<input type="submit" value="Nachricht abschicken">
+<input type="reset" value="Eingaben löschen">
+
+</form>
 </body>
 </html>
